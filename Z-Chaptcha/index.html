@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Random Website Selector</title>
+</head>
+<body>
+  <h1>Click the image to go to a random website</h1>
+  <img src="https://example.com/image.png" alt="Click me!" id="random-website-button">
+  <script>
+    // List of websites to choose from
+    var websites = [
+      "https://www.google.com/",
+      "https://www.youtube.com/",
+      "https://www.wikipedia.org/",
+      "https://www.reddit.com/",
+      "https://www.amazon.com/",
+      "https://www.twitter.com/",
+      "https://www.facebook.com/",
+      "https://www.instagram.com/",
+      "https://www.linkedin.com/",
+      "https://www.netflix.com/"
+    ];
+
+    // Add a click event listener to the image
+    document.getElementById("random-website-button").addEventListener("click", function() {
+      // Generate a random number between 0 and the length of the websites array
+      var randomIndex = Math.floor(Math.random() * websites.length);
+      // Get the website at the randomly generated index
+      var randomWebsite = websites[randomIndex];
+      // Navigate to the selected website
+      window.location.href = randomWebsite;
+    });
+  </script>
+</body>
+</html>
