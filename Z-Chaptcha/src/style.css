@@ -1,0 +1,7 @@
+.image-container img {
+  width: 8em;
+  height: 8em;
+  margin: 0.5em;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
