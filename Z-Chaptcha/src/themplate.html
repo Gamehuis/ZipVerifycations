@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zchaptcha</title>
+    <style>
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .image-container img {
+        width: 7em;
+        height: 7em;
+        margin: 0.5em;
+        border: 2px solid transparent;
+        cursor: pointer;
+      }
+      .image-container img.selected {
+        border-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+	Select All images of birds
+    <div class="image-container">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <img src="image4.jpg" alt="Image 4">
+      <img src="image5.jpg" alt="Image 5">
+      <img src="image6.jpg" alt="Image 6">
+    </div>
+    <br>
+    <button id="submit-btn">Submit</button>
+    <script src="src/script.js"></script>
+  </body>
+</html>
